@@ -1,0 +1,23 @@
+//Rutas en api.php
+
+//Aqui afuera pueden escribir todas las demas rutas.
+
+Route::group(['prefix' => 'admin', 'middleware' => 'api.auth'], function () {
+    //Aqui pueden meter las rutas que necesitan que alguien este autenticado.
+}
+
+//router.js
+
+Cuando no sepan donde esta un archivo, le dan ctrl + p.
+
+para tener comunicacion con el backend hay que seguir los siguientes pasos:
+
+1. generar una funcion en el controlador
+
+2. llamar a esa funcion, con una ruta en el api.php como el ejemplo de los roles.
+
+3. llamar a esa ruta con su metodo que se definio (get, post, put) desde el componente con axios.
+
+4. maquetar donde se van a mostrar estos datos en el frontend.
+
+5. si necesitan ver si algo esta bien, denle un console.log(response)
